@@ -4,7 +4,7 @@
     "description": "This project is really great.",
     "slug": "gofit",
     "privacy": "public",
-    "sdkVersion": "27.0.0",
+    "sdkVersion": "33.0.0",
     "platforms": ["ios", "android"],
     "version": "2.0.0",
     "orientation": "portrait",
@@ -33,8 +33,7 @@
     },
     "android": {
       "package": "com.wicombit.gofit",
-      "versionCode": 2,
-
+      "versionCode": 2
     }
   }
 }
