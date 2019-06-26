@@ -1,0 +1,24 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "dependencies": {
+    "antd-mobile": "^2.1.8",
+    "expo": "^27.0.1",
+    "firebase": "^4.13.1",
+    "moment": "^2.22.1",
+    "native-base": "^2.4.3",
+    "react": "16.3.1",
+    "react-dom": "^16.3.2",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-27.0.0.tar.gz",
+    "react-native-countdown": "0.0.3",
+    "react-native-countdown-clock": "^2.0.2",
+    "react-native-countdown-component": "^1.6.0",
+    "react-native-countdown-hint": "^0.0.3",
+    "react-native-render-html": "^3.9.3",
+    "react-native-star-rating": "^1.0.9",
+    "react-native-swiper-flatlist": "^1.0.6",
+    "react-native-timeago": "^0.4.0",
+    "react-navigation": "^1.5.11",
+    "tcomb-form-native": "^0.6.11"
+  }
+}

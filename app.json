@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "GoFit",
+    "description": "This project is really great.",
+    "slug": "gofit",
+    "privacy": "public",
+    "sdkVersion": "27.0.0",
+    "platforms": ["ios", "android"],
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "androidStatusBarColor": "#ce840f",
+    "androidStatusBar": {
+    "barStyle": "light-content",
+    "backgroundColor": "#ce840f"
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "ios": {
+      "bundleIdentifier": "com.wicombit.gofit"
+    },
+    "android": {
+      "package": "com.wicombit.gofit",
+      "versionCode": 2,
+
+    }
+  }
+}
