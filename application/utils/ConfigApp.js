@@ -1,14 +1,15 @@
 
 //////////////////// CONFIG APP
 
-import Expo from 'expo';
+import * as Expo from 'expo';
+
 
 const isStandAloneApp = Expo.Constants.appOwnership == "standalone";
 
 const ConfigApp = {
 
     // backend url
-    URL: "YOUR_BACKEND_URL",
+    URL: "http://192.168.1.33",
 
     // banner admob unit id
     BANNER_ID: "YOUR_BANNER_ID",

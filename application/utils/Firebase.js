@@ -2,9 +2,9 @@
 //////////////////// FIREBASE
 
 export default firebaseConfig = {
-    apiKey: "API_KEY",
-    authDomain: "AUTH_DOMAIN",
-    databaseURL: "DATABASE_URL",
-    projectId: "PROJECT_ID",
-    storageBucket: "",
+    apiKey: "AIzaSyBRMyVFGqWtu6xEF6qPHBteQGzgiqWpYAE",
+    authDomain: "daily-joke-app.firebaseapp.com",
+    databaseURL: "https://daily-joke-app.firebaseio.com",
+    projectId: "daily-joke-app",
+    storageBucket: "daily-joke-app.appspot.com"
   };

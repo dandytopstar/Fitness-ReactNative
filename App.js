@@ -25,16 +25,16 @@ function cacheImages(images) {
 }
 
 export default class App extends React.Component {
-	constructor () {
-		super();
-		this.state = {
-			isLogged: false,
-			loaded: false,
-			isReady: false,
-		}
-	}
+  constructor() {
+    super();
+    this.state = {
+      isLogged: false,
+      loaded: false,
+      isReady: false,
+    }
+  }
 
-async _loadAssetsAsync() {
+  async _loadAssetsAsync() {
     const imageAssets = cacheImages([
       require('./assets/images/bg.jpg'),
       require('./assets/images/goals.jpg'),
@@ -69,12 +69,14 @@ async _loadAssetsAsync() {
     await Promise.all([...imageAssets]);
   }
 
-	async componentDidMount () {
+  async componentDidMount() {
 
 
-      await Font.loadAsync({
+    await Font.loadAsync({
       Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf"),
       'simple-line-icons': require('@expo/vector-icons/fonts/SimpleLineIcons.ttf'),
+      'SimpleLineIcons': require('@expo/vector-icons/fonts/SimpleLineIcons.ttf'),
+
       Entypo: require('@expo/vector-icons/fonts/Entypo.ttf'),
       Ionicons: require('@expo/vector-icons/fonts/Ionicons.ttf')
 
@@ -82,25 +84,25 @@ async _loadAssetsAsync() {
 
 
 
-		await firebase.auth().onAuthStateChanged((user) => {
-			if(user !== null) {
-				this.setState({
-					isLogged: true,
-					loaded: true
-				});
-			} else {
-				this.setState({
-					isLogged: false,
-					loaded: true
-				});
-			}
-		})
+    await firebase.auth().onAuthStateChanged((user) => {
+      if (user !== null) {
+        this.setState({
+          isLogged: true,
+          loaded: true
+        });
+      } else {
+        this.setState({
+          isLogged: false,
+          loaded: true
+        });
+      }
+    })
 
-	}
+  }
 
-	render() {
+  render() {
 
-		    if (!this.state.isReady) {
+    if (!this.state.isReady) {
       return (
         <AppLoading
           startAsync={this._loadAssetsAsync}
@@ -110,32 +112,32 @@ async _loadAssetsAsync() {
       );
     }
 
-		const {isLogged, loaded, isReady} = this.state;
+    const { isLogged, loaded, isReady } = this.state;
 
-		if ( ! loaded) {
-			return (
-        <AppPreLoader/>
-        );
-		}
+    if (!loaded) {
+      return (
+        <AppPreLoader />
+      );
+    }
 
-		if(isLogged && isReady) {
-			return (
+    if (isLogged && isReady) {
+      return (
         <Root>
-        <OfflineBar/>
-        <StatusBar barStyle="light-content" backgroundColor="#ce8512" />
-        
-        <LoggedNavigation />
+          <OfflineBar />
+          <StatusBar barStyle="light-content" backgroundColor="#ce8512" />
+
+          <LoggedNavigation />
         </Root>
-        );
-		} else {
-			return (
+      );
+    } else {
+      return (
         <Root>
-        <StatusBar hidden />
-        <GuestNavigation />
+          <StatusBar hidden />
+          <GuestNavigation />
         </Root>
-        );
-		}
-	}
+      );
+    }
+  }
 }
 
 

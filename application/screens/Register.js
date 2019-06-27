@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 var styles = require('../../assets/files/Styles');
-import {Alert, Dimensions, Image} from 'react-native';
-import { Container, Body, Footer, Header, Input, Item, Left, Text, Title, Right, View, Button, Toast} from 'native-base';
+import { Alert, Dimensions, Image } from 'react-native';
+import { Container, Body, Footer, Header, Input, Item, Left, Text, Title, Right, View, Button, Toast } from 'native-base';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
 import { NavigationActions } from 'react-navigation';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
@@ -28,25 +28,30 @@ stylesheet.textbox.normal.paddingLeft = 20;
 stylesheet.textbox.normal.paddingRight = 20;
 stylesheet.textbox.normal.height = 53;
 stylesheet.textbox.normal.minWidth = 300;
-stylesheet.textbox.normal.resizeMode = 'contain';
+// stylesheet.textbox.normal.resizeMode = 'contain';
 
 stylesheet.textbox.error.borderRadius = 50;
 stylesheet.textbox.error.paddingLeft = 20;
 stylesheet.textbox.error.paddingRight = 20;
 stylesheet.textbox.error.height = 53;
 stylesheet.textbox.error.minWidth = 300;
-stylesheet.textbox.error.resizeMode = 'contain';
+// stylesheet.textbox.error.resizeMode = 'contain';
 stylesheet.textbox.error.borderColor = '#d1d5da';
 
 export default class Register extends Component {
-static navigationOptions = {
-	header: null
-};
-	constructor () {
+	static navigationOptions = {
+		header: null
+	};
+	constructor() {
 		super();
 
 		this.state = {
-			user: {}
+			user: {
+				name: 'wangharry',
+				email: 'eugene19950901@outlook.com',
+				password: '123qwe!@#QWE',
+				confirm_password: '123qwe!@#QWE'
+			}
 		};
 
 		this.samePassword = t.refinement(t.String, (s) => {
@@ -65,24 +70,24 @@ static navigationOptions = {
 			fields: {
 				name: {
 					placeholderTextColor: '#d1d5da',
-          			stylesheet: stylesheet
+					stylesheet: stylesheet
 				},
 				email: {
 					autoCapitalize: 'none',
 					placeholderTextColor: '#d1d5da',
-          			stylesheet: stylesheet
+					stylesheet: stylesheet
 				},
 				password: {
 					password: true,
 					secureTextEntry: true,
 					placeholderTextColor: '#d1d5da',
-          			stylesheet: stylesheet
+					stylesheet: stylesheet
 				},
 				confirm_password: {
 					password: true,
 					secureTextEntry: true,
 					placeholderTextColor: '#d1d5da',
-          			stylesheet: stylesheet
+					stylesheet: stylesheet
 				}
 			}
 		};
@@ -91,28 +96,29 @@ static navigationOptions = {
 	}
 
 
-	register () {
-
+	register() {
 		const validate = this.refs.form.getValue();
-		if(this.validate) {
-		    const errorHandler = ((e)=>{
-            console.log(e);
-            if(e.code == 'auth/email-already-in-use'){
-				Toast.show({ text: `${Strings.ST36}`, position: 'bottom', buttonText: `${Strings.ST33}` })
-               
-            } else {
-				Toast.show({ text: `${Strings.ST32}`, position: 'bottom', buttonText: `${Strings.ST33}` })
-            }
 
-        })
-        firebase.auth().createUserWithEmailAndPassword(validate.email,validate.password).then((response) => {
-            firebase.auth().currentUser.updateProfile({
-                displayName : validate.name,
-            }).then(()=>{
-            }).catch(errorHandler);
+			const errorHandler = ((e) => {
+				console.log('err', e);
+				if (e.code == 'auth/email-already-in-use') {
+					Toast.show({ text: `${Strings.ST36}`, position: 'bottom', buttonText: `${Strings.ST33}` })
 
-        }).catch(errorHandler)
-	}}
+				} else {
+					Toast.show({ text: `${Strings.ST32}`, position: 'bottom', buttonText: `${Strings.ST33}` })
+				}
+
+			})
+			firebase.auth().createUserWithEmailAndPassword(validate.email, validate.password).then((response) => {
+				firebase.auth().currentUser.updateProfile({
+					displayName: validate.name,
+				}).then(() => {
+					console.log('success')
+				}).catch(errorHandler);
+
+			}).catch(errorHandler)
+	
+	}
 
 	/*
 
@@ -133,47 +139,47 @@ static navigationOptions = {
 
 	*/
 
-	onChange (user) {
-		this.setState({user});
+	onChange(user) {
+		this.setState({ user });
 		if (user.confirm_password !== null && user.confirm_password !== "") {
-		this.validate = this.refs.form.getValue();
+			this.validate = this.refs.form.getValue();
 		}
 	}
 
-	render () {
+	render() {
 		return (
-			<Container style={{backgroundColor: '#fff'}}>
-			<Header style={{backgroundColor: '#fff', borderBottomWidth: 0, shadowOpacity: 0, elevation: 0,}}>
-			<Left style={{ flex: 1 }}>
-            <Button transparent>
-              <Icon name='arrow-left' style={{fontSize: 18}} onPress={() => this.props.navigation.goBack()} />
-            </Button>
-          </Left>
-          <Body style={{ flex: 4,  justifyContent: 'center', alignItems: 'center'  }}>
-            <Title style={{color: '#000000'}}>{Strings.ST27}</Title>
-          </Body>
-          <Right style={{ flex: 1 }} />
-        </Header>
-		<Body>
-		<KeyboardAwareScrollView>
+			<Container style={{ backgroundColor: '#fff' }}>
+				<Header style={{ backgroundColor: '#fff', borderBottomWidth: 0, shadowOpacity: 0, elevation: 0, }}>
+					<Left style={{ flex: 1 }}>
+						<Button transparent>
+							<Icon name='arrow-left' style={{ fontSize: 18 }} onPress={() => this.props.navigation.goBack()} />
+						</Button>
+					</Left>
+					<Body style={{ flex: 4, justifyContent: 'center', alignItems: 'center' }}>
+						<Title style={{ color: '#000000' }}>{Strings.ST27}</Title>
+					</Body>
+					<Right style={{ flex: 1 }} />
+				</Header>
+				<Body>
+					<KeyboardAwareScrollView>
 
-		<View style={{flex: 0.8, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: 20}}>
-			<Image source={require('../../assets/images/logo_dark.png')} style={styles.logo_start} resizeMode="contain"/>
-						<Form
-							ref="form"
-							type={this.user}
-							options={this.options}
-							onChange={(v) => this.onChange(v)}
-							value={this.state.user}
-						/>
-										<Button rounded block onPress={this.register.bind(this)} style={styles.button_auth}>
-				<Text>{Strings.ST28}</Text>
-				</Button>
-					</View>
-		</KeyboardAwareScrollView>
+						<View style={{ flex: 0.8, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: 20 }}>
+							<Image source={require('../../assets/images/logo_dark.png')} style={styles.logo_start} />
+							<Form
+								ref="form"
+								type={this.user}
+								options={this.options}
+								onChange={(v) => this.onChange(v)}
+								value={this.state.user}
+							/>
+							<Button rounded block onPress={this.register.bind(this)} style={styles.button_auth}>
+								<Text>{Strings.ST28}</Text>
+							</Button>
+						</View>
+					</KeyboardAwareScrollView>
 
-			</Body>
-		</Container>
+				</Body>
+			</Container>
 		)
 	}
 }
