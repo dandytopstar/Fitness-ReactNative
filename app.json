@@ -4,7 +4,7 @@
     "description": "This project is really great.",
     "slug": "gofit",
     "privacy": "public",
-    "sdkVersion": "32.0.0",
+    "sdkVersion": "35.0.0",
     "platforms": ["ios", "android"],
     "version": "2.0.0",
     "orientation": "portrait",

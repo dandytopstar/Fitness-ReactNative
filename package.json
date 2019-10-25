@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "antd-mobile": "^2.1.8",
-    "expo": "^32.0.0",
+    "expo": "^35.0.0",
     "expo-asset": "~1.1.1",
     "expo-constants": "~1.1.0",
     "expo-file-system": "~1.1.0",
@@ -14,7 +14,7 @@
     "native-base": "^2.4.3",
     "react": "16.5.0",
     "react-dom": "^16.3.2",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
     "react-native-countdown": "0.0.3",
     "react-native-countdown-clock": "^2.0.2",
     "react-native-countdown-component": "^1.6.0",
