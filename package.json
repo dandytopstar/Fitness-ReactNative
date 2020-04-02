@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "antd-mobile": "^2.1.8",
-    "expo": "^35.0.0",
+    "expo": "^36.0.0",
     "expo-asset": "~1.1.1",
     "expo-constants": "~1.1.0",
     "expo-file-system": "~1.1.0",
@@ -12,9 +12,9 @@
     "firebase": "^4.13.1",
     "moment": "^2.22.1",
     "native-base": "^2.4.3",
-    "react": "16.5.0",
+    "react": "16.13.0",
     "react-dom": "^16.3.2",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
     "react-native-countdown": "0.0.3",
     "react-native-countdown-clock": "^2.0.2",
     "react-native-countdown-component": "^1.6.0",
@@ -27,6 +27,6 @@
     "tcomb-form-native": "^0.6.11"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.0.0"
+    "babel-preset-expo": "^7.0.0"
   }
 }
