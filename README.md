@@ -48,7 +48,7 @@
   </kbd>
     &nbsp;&nbsp;&nbsp;&nbsp;
   <kbd>
-    <img width="250" style="border-radius: 5px" height="450" src="screenshots/6.jpg" alt="6">
+    <img width="250" style="border-radius: 5px" height="450" src="screens/6.jpg" alt="6">
   </kbd>
 </p>
 
