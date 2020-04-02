@@ -3,7 +3,7 @@ import { NavigationActions, StackNavigator } from 'react-navigation';
 import { Container, Content, Body, Text, List, Right, Button, ListItem} from 'native-base';
 import{ ImageBackground, Dimensions, View, TouchableOpacity, SafeAreaView, ScrollView, FlatList, AsyncStorage, Linking, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
-import { LinearGradient } from 'expo';
+import { LinearGradient } from 'expo-linear-gradient';
 import PostRating from '../components/PostRating';
 import PostForm from '../forms/PostForm';
 import PostComments from '../forms/PostComments';

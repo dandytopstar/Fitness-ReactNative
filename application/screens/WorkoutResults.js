@@ -3,7 +3,7 @@ import { NavigationActions, StackNavigator } from 'react-navigation';
 import AppPreLoader from '../components/AppPreLoader';
 import{ ImageBackground, Dimensions, View, TouchableOpacity, FlatList, ActivityIndicator, SafeAreaView, ScrollView  } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { LinearGradient } from 'expo';
+import { LinearGradient } from 'expo-linear-gradient';
 import {Grid, Row } from 'react-native-easy-grid';
 import { Container, Text, Body, Right, List, ListView, Thumbnail, ListItem, Button} from 'native-base';
 import BannerAd from '../components/BannerAd';

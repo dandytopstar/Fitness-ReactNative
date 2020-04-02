@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import ConfigApp from '../utils/ConfigApp';
-import { AdMobBanner } from 'expo';
+import {
+  AdMobBanner,
+} from 'expo-ads-admob';
 
 class BannerAd extends React.Component {
 

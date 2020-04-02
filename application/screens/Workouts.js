@@ -1,7 +1,7 @@
  import React, {Component} from 'react';
 import { NavigationActions, DrawerNavigator,  StackNavigator } from 'react-navigation';
 import{ ImageBackground, Dimensions, View, TouchableOpacity, SafeAreaView, ActivityIndicator } from 'react-native';
-import { LinearGradient } from 'expo';
+import { LinearGradient } from 'expo-linear-gradient';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {Grid, Row } from 'react-native-easy-grid';
 import { Container, Text} from 'native-base';

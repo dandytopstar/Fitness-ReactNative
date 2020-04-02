@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import ConfigApp from '../utils/ConfigApp';
-import {AdMobInterstitial} from 'expo';
+import {
+  AdMobInterstitial,
+} from 'expo-ads-admob';
 
 class InterstitialAd extends React.Component {
 

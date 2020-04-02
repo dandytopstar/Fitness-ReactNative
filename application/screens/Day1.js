@@ -3,7 +3,6 @@ import { NavigationActions, StackNavigator } from 'react-navigation';
 import AppPreLoader from '../components/AppPreLoader';
 import{ Image, Dimensions, View, TouchableOpacity, FlatList, Button, ActivityIndicator, SafeAreaView, ScrollView } from 'react-native';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
-import { LinearGradient } from 'expo';
 import {Grid, Row, Col } from 'react-native-easy-grid';
 import { Container, Text, Body, Right, List, ListView, Thumbnail, ListItem} from 'native-base';
 import Strings from '../utils/Strings';

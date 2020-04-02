@@ -4,7 +4,7 @@ import { NavigationActions, StackNavigator } from 'react-navigation';
 import{ ImageBackground, AsyncStorage, TouchableOpacity, Dimensions, View, Image, SafeAreaView, ScrollView, FlatList} from 'react-native';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
 import { Container, Content, Body, Thumbnail,Text, List, Right,Left, Button, ListItem, Tab, Tabs} from 'native-base';
-import { LinearGradient } from 'expo';
+import { LinearGradient } from 'expo-linear-gradient';
 import ConfigApp from '../utils/ConfigApp';
 import TimeAgo from 'react-native-timeago';
 import PostFav from '../components/PostFav';

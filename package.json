@@ -2,14 +2,16 @@
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "dependencies": {
+    "@expo/vector-icons": "^10.0.6",
     "antd-mobile": "^2.1.8",
     "expo": "^36.0.0",
-    "expo-asset": "~1.1.1",
-    "expo-constants": "~1.1.0",
-    "expo-file-system": "~1.1.0",
-    "expo-font": "^1.0.0",
-    "@expo/vector-icons": "8.0.0",
-    "firebase": "^4.13.1",
+    "expo-ads-admob": "~8.0.0",
+    "expo-asset": "~8.0.0",
+    "expo-constants": "~8.0.0",
+    "expo-file-system": "~8.0.0",
+    "expo-font": "~8.0.0",
+    "expo-linear-gradient": "~8.0.0",
+    "firebase": "^7.13.1",
     "moment": "^2.22.1",
     "native-base": "^2.4.3",
     "react": "16.13.0",
@@ -23,8 +25,9 @@
     "react-native-star-rating": "^1.0.9",
     "react-native-swiper-flatlist": "^1.0.6",
     "react-native-timeago": "^0.4.0",
+    "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^1.5.11",
-    "tcomb-form-native": "^0.6.11"
+    "tcomb-form-native": "^0.6.20"
   },
   "devDependencies": {
     "babel-preset-expo": "^7.0.0"

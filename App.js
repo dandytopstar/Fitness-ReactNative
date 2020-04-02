@@ -1,6 +1,10 @@
 import React from 'react';
 
-import { AppLoading, Asset, Font } from 'expo';
+import { AppLoading } from 'expo';
+
+import * as Font from 'expo-font';
+import { Asset } from 'expo-asset';
+
 import { Root } from "native-base";
 import { StatusBar } from "react-native";
 import AppPreLoader from "./application/components/AppPreLoader";
@@ -74,11 +78,11 @@ export default class App extends React.Component {
 
     await Font.loadAsync({
       Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf"),
-      'simple-line-icons': require('@expo/vector-icons/fonts/SimpleLineIcons.ttf'),
-      'SimpleLineIcons': require('@expo/vector-icons/fonts/SimpleLineIcons.ttf'),
+      // 'simple-line-icons': require('@expo/vector-icons/fonts/SimpleLineIcons.ttf'),
+      // 'SimpleLineIcons': require('@expo/vector-icons/fonts/SimpleLineIcons.ttf'),
 
-      Entypo: require('@expo/vector-icons/fonts/Entypo.ttf'),
-      Ionicons: require('@expo/vector-icons/fonts/Ionicons.ttf')
+      // Entypo: require('@expo/vector-icons/fonts/Entypo.ttf'),
+      // Ionicons: require('@expo/vector-icons/fonts/Ionicons.ttf')
 
     });
 

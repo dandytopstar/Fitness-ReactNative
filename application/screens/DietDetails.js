@@ -2,7 +2,7 @@
 import { NavigationActions, StackNavigator, withNavigation } from 'react-navigation';
 import{ ImageBackground, Dimensions, View, TouchableOpacity, AsyncStorage, ScrollView, FlatList, Image, SafeAreaView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { LinearGradient } from 'expo';
+import { LinearGradient } from 'expo-linear-gradient';
 import {Grid, Row, Col } from 'react-native-easy-grid';
 import { Container, Content, Body, Text, List, Right, ListItem, Tab, Tabs} from 'native-base';
 import * as firebase from 'firebase';
