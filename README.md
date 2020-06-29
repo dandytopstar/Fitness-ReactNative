@@ -28,27 +28,27 @@
 
 <p align="center">
   <kbd>
-    <img width="250" style="border-radius: 5px" height="450" src="screens/1.jpg" alt="1">
+    <img width="220" style="border-radius: 5px" height="450" src="screens/1.jpg" alt="1">
   </kbd>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <kbd>
-    <img width="250" style="border-radius: 5px" height="450" src="screens/2.jpg" alt="2">
+    <img width="220" style="border-radius: 5px" height="450" src="screens/2.jpg" alt="2">
   </kbd>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <kbd>
-    <img width="250" style="border-radius: 5px" height="450" src="screens/3.jpg" alt="3">
+    <img width="220" style="border-radius: 5px" height="450" src="screens/3.jpg" alt="3">
   </kbd>
   <br/><br/>
   <kbd>
-    <img width="250" style="border-radius: 5px" height="450" src="screens/4.jpg" alt="4">
+    <img width="220" style="border-radius: 5px" height="450" src="screens/4.jpg" alt="4">
   </kbd>
     &nbsp;&nbsp;&nbsp;&nbsp;
   <kbd>
-    <img width="250" style="border-radius: 5px" height="450" src="screens/5.jpg" alt="5">
+    <img width="220" style="border-radius: 5px" height="450" src="screens/5.jpg" alt="5">
   </kbd>
     &nbsp;&nbsp;&nbsp;&nbsp;
   <kbd>
-    <img width="250" style="border-radius: 5px" height="450" src="screens/6.jpg" alt="6">
+    <img width="220" style="border-radius: 5px" height="450" src="screens/6.jpg" alt="6">
   </kbd>
 </p>
 
