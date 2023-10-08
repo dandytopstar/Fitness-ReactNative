@@ -70,8 +70,8 @@ GoFit is fitness app made by PHP and expo-cli react-native framework.
 
 #### 1) Clone & Install Dependencies
 
-- 1.1) `git clone https://github.com/kingofdevs/rn-fitness-expo.git`
-- 1.2) `cd react-native-expo-loadpaneldriver` - cd into your newly created project directory.
+- 1.1) `git clone https://github.com/dandytopstar/Fitness-ReactNative.git`
+- 1.2) `cd Fitness-ReactNative` - cd into your newly created project directory.
 - 1.3) Install NPM packages with `yarn install`
         **Note:** NPM has issues with React Native so `yarn` is recommended over `npm`.
 #### 2) Start your app
